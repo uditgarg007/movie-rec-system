@@ -50,3 +50,12 @@ This project uses **Content-Based Filtering**.
 ---
 
 ## 📂 Project Structure
+
+```
+movie-rec-system
+│
+├── app.py                # Streamlit application
+├── movie_dict.pkl        # Movie dataset
+├── requirements.txt      # Project dependencies
+├── README.md             # Project documentation
+```
