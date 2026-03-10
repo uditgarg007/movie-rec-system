@@ -51,9 +51,9 @@ This project uses **Content-Based Filtering**.
 ## 📂 Project Structure
 movie-rec-system/
 │
-├── app.py
-├── movie_recommendation.ipynb
-├── movie_dict.pkl
-├── similarity.pkl
-├── requirements.txt
-└── README.md
+├── app.py                         # Streamlit web application
+├── movie_recommendation.ipynb     # Model building notebook
+├── movie_dict.pkl                 # Movie metadata dictionary
+├── similarity.pkl                 # Precomputed similarity matrix
+├── requirements.txt               # Project dependencies
+└── README.md                      # Project documentation
