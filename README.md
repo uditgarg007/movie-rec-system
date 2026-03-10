@@ -2,24 +2,23 @@
 
 A **Content-Based Movie Recommendation System** built with **Python and Streamlit** that recommends similar movies based on the user's selection.
 
-The system analyzes movie metadata and computes similarity between movies using **machine learning techniques** to generate personalized recommendations.
+The system analyzes movie metadata and computes similarity between movies using **machine learning techniques** to generate recommendations.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **Try the app here:**  
-https://movie-rec-system-udit.streamlit.app/
+🔗 https://movie-rec-system-udit.streamlit.app/
 
 ---
 
 ## 📌 Features
 
-- Select a movie from the dropdown list
+- Select a movie from the dropdown menu
 - Get **Top 5 similar movie recommendations**
 - Displays **movie posters**
-- Fast recommendation system using **precomputed similarity**
 - Interactive UI built using **Streamlit**
+- Fast recommendation system using **precomputed similarity matrix**
 
 ---
 
@@ -29,33 +28,32 @@ This project uses **Content-Based Filtering**.
 
 ### Steps
 
-1. Movie metadata (genres, keywords, cast, crew) is processed.
-2. Text features are combined into a single representation.
-3. A **vectorization technique** is applied to convert text into numerical features.
+1. Movie metadata such as **genres, keywords, cast, and crew** are processed.
+2. The relevant features are combined into a single representation.
+3. Text data is converted into vectors using **vectorization techniques**.
 4. **Cosine similarity** is computed between all movies.
-5. When a user selects a movie, the system recommends the **most similar movies**.
+5. When a movie is selected, the system recommends the **most similar movies**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Scikit-learn**
-- **Streamlit**
-- **Requests**
-- **TMDB API**
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Requests
+- TMDB API
 
 ---
 
 ## 📂 Project Structure
-
-```
-movie-rec-system
+movie-rec-system/
 │
-├── app.py                # Streamlit application
-├── movie_dict.pkl        # Movie dataset
-├── requirements.txt      # Project dependencies
-├── README.md             # Project documentation
-```
+├── app.py # Main Streamlit application
+├── movie_recommendation.ipynb # Notebook used to build the recommendation model
+├── movie_dict.pkl # Processed movie dataset used in the app
+├── similarity.pkl # Precomputed similarity matrix (downloaded via Google Drive)
+├── requirements.txt # Python dependencies required to run the project
+└── README.md # Project documentation
